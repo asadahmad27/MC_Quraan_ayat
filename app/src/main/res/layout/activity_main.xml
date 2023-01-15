@@ -12,8 +12,8 @@
 
     <TextView
         android:id="@+id/titleView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="404dp"
+        android:layout_height="62dp"
         android:background="#3A083E"
         android:text="بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ "
         android:textColor="#FAF7F7"
@@ -83,33 +83,13 @@
 
     <Button
         android:id="@+id/btnSearch"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="216dp"
+        android:layout_height="56dp"
         android:text="Search"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/titleView"
-        app:layout_constraintVertical_bias="0.311" />
-
-    <EditText
-        android:id="@+id/ParahDisplayView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:editable="true"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:text=" "
-        android:textColor="#F8F6F6"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.772"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.402" />
+        app:layout_constraintTop_toBottomOf="@+id/AyatNum" />
 
     <EditText
         android:id="@+id/AyatNum"
@@ -136,32 +116,5 @@
         app:layout_constraintStart_toEndOf="@+id/txtLabel1"
         app:layout_constraintTop_toTopOf="@+id/txtLabel1"
         app:layout_constraintVertical_bias="0.0" />
-
-    <EditText
-        android:id="@+id/englishParahName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:textColor="#EAE4E4"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.164"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406" />
-
-    <Button
-        android:id="@+id/buttonGit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="13dp"
-        android:text="G"
-        app:layout_constraintBottom_toTopOf="@+id/ParahDisplayView"
-        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
